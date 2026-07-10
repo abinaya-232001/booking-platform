@@ -52,7 +52,8 @@ docker-compose up --build
 \`\`\`
 
 ## API Documentation
-Swagger UI: \`http://localhost:4000/api/docs`
+
+Swagger UI: `http://localhost:4000/api/docs`
 
 ## API Endpoints
 
