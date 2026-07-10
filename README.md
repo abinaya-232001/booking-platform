@@ -54,6 +54,27 @@ docker-compose up --build
 ## API Documentation
 Swagger UI: \`http://localhost:4000/api/docs\`
 
+## API Endpoints
+
+### Authentication
+- POST /auth/register
+- POST /auth/login
+- POST /auth/refresh
+
+### Services
+- GET /services
+- GET /services/:id
+- POST /services
+- PATCH /services/:id
+- DELETE /services/:id
+
+### Bookings
+- POST /bookings
+- GET /bookings
+- GET /bookings/:id
+- PATCH /bookings/:id/status
+- PATCH /bookings/:id/cancel
+
 ## Assumptions Made
 - All authenticated users share equal permissions to manage all services
   (no per-user ownership was specified in requirements).
@@ -65,5 +86,6 @@ Swagger UI: \`http://localhost:4000/api/docs\`
 ## Future Improvements
 - Role-based access control (e.g., admin vs staff)
 - Email notifications on booking status changes
+  
 - Rate limiting on public endpoints
 - End-to-end tests with a test database
