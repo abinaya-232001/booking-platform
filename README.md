@@ -16,7 +16,7 @@ This API implements:
 
 ## Installation Steps
 \`\`\`bash
-git clone <repo-url>
+git clone https://github.com/abinaya-232001/booking-platform.git
 cd booking-platform
 npm install
 \`\`\`
