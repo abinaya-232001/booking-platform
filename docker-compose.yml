@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+  api:
+    build: .
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    depends_on:
+      - db
+    networks:
+      - booking-network
+
+  db:
+    image: postgres:16-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: booking_platform
+    ports:
+      - '5432:5432'
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    networks:
+      - booking-network
+
+volumes:
+  pgdata:
+
+networks:
+  booking-network:
