@@ -52,7 +52,7 @@ docker-compose up --build
 \`\`\`
 
 ## API Documentation
-Swagger UI: \`http://localhost:3000/api/docs\`
+Swagger UI: \`http://localhost:4000/api/docs\`
 
 ## Assumptions Made
 - All authenticated users share equal permissions to manage all services
